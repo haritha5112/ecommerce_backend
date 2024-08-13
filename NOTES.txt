@@ -1,0 +1,288 @@
+use of MVC
+
+Direct ah image ha databse la store panna mudiyathu, athuku oru cluod serice la store panni , athoda link eduthutha databse la store pannamudiyum
+
+
+When having the more
+
+
+
+hoe to defime the object in the databse
+
+
+models la data irruku, 
+
+inde. route, control,  model (model la tha data irrukum.)
+np
+npm i uuid
+
+
+
+Authorization
+=============
+* It is the role based action. 
+* Whether having the permisson to access the particular page or not.
+-student
+-staff
+
+Authentication
+==============
+* Whether user is the valid user.
+
+
+
+middleware
+==========
+*request kum response ku middle la irrukurathu middleware
+*it is also used for the error handling
+*it is used for the Body parse.
+
+name email poassword
+
+
+
+1) create the model, postt call pannumpoyhu
+
+/user
+Riurer.post
+
+
+store th password by encrypt foe the security.
+
+npm i jsonwebtoken bcrypt
+
+
+what is promise and the need of the promise/??
+
+promise tailing???
+call, need od callbach, what prmbl comes in the callback, need of callback 
+
+callback hell problem ah satisfied pandrtahu tha pramise use
+
+asyn await,====to convert tye sync code to async
+
+password ah encrpt pamdratuku use pandra package bcrypt.
+
+--JWT--
+=======
+
+three part
+===============
+1)header-algothrim and token type
+2)payload-Data
+3) Signature-secret
+
+
+jwt.sign- to generate
+jwt.verify-
+
+access token validation=login
+====================
+"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjZiMWM5Y2M4ZjRlZGM5ZGRmMGFiMDNjIiwiaWF0IjoxNzIzMDAyNTA3LCJleHAiOjE3MjMwMDYxMDd9.NoSOw15qKuhmNuuQWLNMNAV8P1hlJtPGUyleGgPvCrI"
+
+schema- in array of objest -uid ,quantity
+model-cartmodel-id, prodect[pid,]
+
+
+find and filter
+==============
+
+
+find will return the first Occurence and filter will return  the 
+
+
+logic=
+
+cart
+
+
+quan , 
+-post la send 
+
+uid,request.
+
+1 user irruka nu check pannnaum, 
+pid, quanti pass pannanum-
+if no user-userid. store
+id u have 
+
+
+pid eyJ1c2VyX2lkIjoiNjZiMWM5Y2M4ZjRlZGM5ZGRmMGFiMDNjIiwiaWF0IjoxNzIzMDAyNTA3LCJleHAiOjE3MjMwMDYxMDd9
+
+uhavin check
+if not cre docu -pass proid
+if u have,findone  creet new pro doc 
+
+
+pro kula pid irruka nu check
+id pid have update quant 
+pid not
+
+
+os 
+==
+
+interact betwween the hardware and the sofware-eg-mouse
+
+augment and virtual reality
+================================
+
+package used for the file and the image 
+
+
+for User creation
+==================
+http://localhost:3000/user2/createUser2
+
+user---POST   http://localhost:3000/user/login
+====
+
+  {
+        
+        "email":"user@gmail.com",
+        "password":"1234"
+    }
+
+
+"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjZiMWM5Y2M4ZjRlZGM5ZGRmMGFiMDNjIiwiaWF0IjoxNzIzMDQ4NjM1LCJleHAiOjE3MjMwNTIyMzV9.EfyOqxTW20GBgeme3R4QXhSayEl1wrG5pYTonqpY2XY"
+
+user2-----POST     http://localhost:3000/user2/login    
+======
+ {
+        
+        "email":"user2@gmail.com",
+        "password":"1234"
+    }
+
+
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyMl9pZCI6IjY2YjM5ODI3OTEyZDVlMGQ0Zjc2NjgzYiIsImlhdCI6MTcyMzA0ODI2NSwiZXhwIjoxNzIzMDUxODY1fQ.MtcbiWQzQoersz-g3EBsaRCokI_UsHdr9qihfDwEDXQ"
+
+
+
+
+interact
+-od- file system-schedule algorithm-sql query(very import)- networks-dbms-(join, subquery, nested)-os la what is processors(2m)-linux la user vs curnal-
+also learn about some of the hardware and the software linkage-
+basic os used,cpmmands used i the os,features of the os-to connect the one os to anothe os-linus basic commands-
+
+arduino-
+
+
+user-http://localhost:3000/cart/createCart
+
+
+"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjZiMWM5Y2M4ZjRlZGM5ZGRmMGFiMDNjIiwiaWF0IjoxNzIzMDk4OTE5LCJleHAiOjE3MjMxMDI1MTl9.ajv69mzViDUopj3uK2fYWZ5KGnd1xvo39knS1Sk9yp4"
+
+compas
+=====
+
+ {
+        
+        "email":"user@gmail.com",
+        "password":"1234"
+    }
+
+    
+    {
+"id":"1",
+"name":"MASALA CHAI",
+"description":"Masala Chai. Masala Chai is a spicier version of the traditional chai.",
+"cost":"25",
+"category":"chai",
+"url":"https://cdn.shopify.com/s/files/1/0078/8103/1735/files/Bombay-Cutting-…",
+"rating":"4.5"
+}
+
+
+
+
+//
+user creatinon =
+{
+    
+    "email": " user@gmail.com",
+    "password": "12345"
+}
+create cart:
+{
+
+    "product_id":" ",
+    "quantity": "2"
+} id need to coppy from create product la id need to copy pasted header
+then to get cart change post to get 
+to delete the cart give 
+cart/deleteCart/id number then 
+{
+    
+
+
+    "product_id":"a4aa6789-f03e-41b2-8ba5-95e1a182baa5",
+    "quantity": "2"
+
+}
+cart/deleteCart/a4aa6789-f03e-41b2-8ba5-95e1a182baa5
+
+
+in postman required 
+
+{
+"id":"1",
+"name":"MASALA CHAI",
+"description":"Masala Chai. Masala Chai is a spicier version of the traditional chai.",
+"cost":"25",
+"category":"chai",
+"url":"https://cdn.shopify.com/s/files/1/0078/8103/1735/files/Bombay-Cutting-…",
+"rating":"4.5"
+}
+{
+      "id": "2",
+      "name": "Cardamom chai",
+      "cost": "22.3",
+      "description": "Cardamom chai. This is a popular one in the Southern regions of India that experience a hot climate and also grow cardamom extensively.",
+      "category": "chai",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpdJlpG0H9OyOdZQGWPlFg5O-RkQCeLLR0LQ&s",
+      "rating":"4.5"
+}
+
+{
+    "email": " user@gmail.com",
+    "password": "12345"
+}
+
+
+{
+
+    "product_id":"a4aa6789-f03e-41b2-8ba5-95e1a182baa5",
+    "quantity": "2"
+}
+   {
+
+    "product_id":"35c1214d-29e2-45d5-87b6-22a9e8beb5ff",
+    "quantity": "5"
+}
+
+
+
+{
+      "id": "3",
+      "name": "Kashmiri kahwa",
+      "cost": "50",
+      "description": "Kashmiri kahwa or kehwa is a popular green tea preparation from the valley of Kashmir. It is made with the addition of saffron strands, cardamom, cinnamon",
+      "category": "chai",
+      "url": "https://www.vegrecipesofindia.com/wp-content/uploads/2019/07/kashmiri-kahwa.jpg",
+      "rating":"4.6"  
+      }
+
+
+
+      backend mongodb atlas new password
+
+      {
+        "name":"user",
+        "email":"user@gmail.com",
+        "password":"1234"
+    }
+
+
+
+      npm i axsiyos
